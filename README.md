@@ -1,4 +1,4 @@
-# Introduction
+### Introduction
 This repo contains the run_analysis.R script developed to summarize the data collected from the accelerometers in the Samsung Galaxy S smartphone. This script is the Course Project from the Getting and Cleaning Data Course provided by Johns Hopkins University through Coursera. 
 The data was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip . The script reads the data from the files described below:
 
@@ -16,10 +16,10 @@ The data was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fpro
 
 The files path must follow the structure described above in relation to the working directory the user set on his R environment.
 
-# Script procedure
+### Script procedure
 This script takes all data from test and train sets, merge them into one data frame and clean them. The goal of the script is provide, for later analysis, a tidy data for subjects and activity type.
 
 According to the requirements, only measures with mean and standard deviation were taken into account.
 
-# Output
+### Output
 The script outputs a data frame containing the average of each variable grouped by subject and activity performed.

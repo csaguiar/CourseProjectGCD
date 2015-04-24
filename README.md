@@ -1,5 +1,6 @@
 # Introduction
-This repo contains the run_analysis.R script developed to summarize the data collected from the accelerometers in the Samsung Galaxy S smartphone. This script is part of the Course Project of the Getting and Cleaning Data Course provided by Johns Hopkins University through Coursera MOOC. The data was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip . The script reads the data from the files described below:
+This repo contains the run_analysis.R script developed to summarize the data collected from the accelerometers in the Samsung Galaxy S smartphone. This script is the Course Project from the Getting and Cleaning Data Course provided by Johns Hopkins University through Coursera. 
+The data was downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip . The script reads the data from the files described below:
 
 - 'features.txt': List of all features.
 

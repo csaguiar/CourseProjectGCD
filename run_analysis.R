@@ -1,11 +1,11 @@
-run_analysis <- function (directory = String()) {
+run_analysis <- function () {
   require(dplyr)
   # Features list
-  filenameFeatures <-paste0(directory,"/features.txt")
+  filenameFeatures <-"features.txt"
   features <- read.table(filenameFeatures,col.names=c("ID","name"),stringsAsFactors = FALSE)
   
   # Activity list
-  filenameActivity <-paste0(directory,"/activity_labels.txt")
+  filenameActivity <-"activity_labels.txt"
   activities <- read.table(filenameActivity,col.names=c("ID","name"),stringsAsFactors = FALSE)
   
   # Filtering features for only variables with "mean()" or "std()" in its description
@@ -16,16 +16,16 @@ run_analysis <- function (directory = String()) {
   features$name <- gsub("-","",features$name)
   
   # Filenames containing test and train data
-  filenameVarTest <- paste0(directory,"/test/X_test.txt")
-  filenameVarTrain <- paste0(directory,"/train/X_train.txt")
+  filenameVarTest <- "test/X_test.txt"
+  filenameVarTrain <- "train/X_train.txt"
   
   # Filenames containing test and train activity labels
-  filenameActvTest <- paste0(directory,"/test/y_test.txt")
-  filenameActvTrain <- paste0(directory,"/train/y_train.txt")
+  filenameActvTest <- "test/y_test.txt"
+  filenameActvTrain <- "train/y_train.txt"
 
   # Filenames containing test and train subject labels
-  filenameSubjTest <- paste0(directory,"/test/subject_test.txt")
-  filenameSubjTrain <- paste0(directory,"/train/subject_train.txt")
+  filenameSubjTest <- "test/subject_test.txt"
+  filenameSubjTrain <- "train/subject_train.txt"
   
   # Read both data and rbind them
   data <- rbind(read.table(filenameVarTest),read.table(filenameVarTrain))
